@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:elevation="4dp"
+        android:titleTextColor="@android:color/white"
+        android:title="Zakat Calculation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-278dp">
+
+        <EditText
+            android:id="@+id/editTextGoldWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="100"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.134"
+            tools:ignore="MissingConstraints,VisualLintTextFieldSize" />
+
+        <Spinner
+            android:id="@+id/spinnerGoldType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gold_types"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextGoldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:hint="280"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.294" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Zakat"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.401"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/textViewZakatPayable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zakat Payable: RM4200 "
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <TextView
+            android:id="@+id/textViewTotalZakat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Zakat: RM105 "
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
