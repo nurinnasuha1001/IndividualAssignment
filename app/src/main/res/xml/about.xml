@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GitHub: https://github.com/nurinnasuha1001/assignment602.git"
+            android:text="GitHub: https://github.com/nurinnasuha1001/IndividualAssignment.git"
             android:textColor="@android:color/holo_blue_light"
             android:layout_marginTop="8dp"
             android:onClick="openGithub" />
